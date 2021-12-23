@@ -58,7 +58,7 @@ ui.splashScreen = function () {
         );
     }
     ui.display.drawText(3, 8,  "-------------");
-    ui.display.drawText(3, 9,  "GUNS ᴎ CURSES");
+    ui.display.drawText(3, 9,  "GUNS И CURSES");
     ui.display.drawText(3, 10, "-------------");
 }
 
