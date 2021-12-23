@@ -85,3 +85,15 @@ header {
 label {
     display: inline-block;
 }
+
+input[type=radio] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    content: "( ) ";
+}
+
+input[type="radio"]:checked + label:before {
+    content: "(X) ";
+}
