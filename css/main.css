@@ -1,0 +1,87 @@
+@font-face {
+    font-family: unifont;
+    src: url(../font/unifont-13.0.01.ttf);
+    font-weight: bold;
+}
+
+body {
+    background: #1c1b22;
+    color: #C0C0C0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: start;
+    align-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.card {
+    background: #2b2a33;
+    width: calc(100vw - 16px);
+    max-width: 400px;
+    min-height: 160px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 8px #00000080;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.card.pre {
+    white-space: pre;
+}
+
+:root {
+    --global-font-size: 16px;
+    --global-line-height: 1.4em;
+    --global-space: 4px;
+    --font-stack: unifont, Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+    --mono-font-stack: unifont, Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+    --background-color: transparent;
+    --page-width: 60em;
+    --font-color: #e8e9ed;
+    --invert-font-color: #222225;
+    --secondary-color: #a3abba;
+    --tertiary-color: #a3abba;
+    --primary-color: #62c4ff;
+    --error-color: #ff3c74;
+    --progress-bar-background: #3f3f44;
+    --progress-bar-fill: #62c4ff;
+    --code-bg-color: #3f3f44;
+    --input-style: solid;
+    --display-h1-decoration: none;
+}
+
+#display {
+    text-align: center;
+}
+
+#canvas-container {
+    width: calc(19 * 16px);
+    height: calc(19 * 16px);
+    display: inline-block;
+}
+
+header {
+    font-weight: 800;
+}
+
+label {
+    display: inline-block;
+}
