@@ -106,7 +106,7 @@ ui.splashScreen = function () {
         ui.myDraw(x, y, ' ', '~', ROT.Color.toHex(ROT.Color.interpolate([255, 0, 0], [255, 255, 0], c)), "#00000010");
     }
     ui.myDrawText(3, 8,  "-------------", "%c{red}-------------");
-    ui.myDrawText(3, 9,  "GUNS И CURSES", "%c{red}GUNS И CURSES");
+    ui.myDrawText(3, 9,  "GUNS'И CURSES", "%c{red}GUNS'И CURSES");
     ui.myDrawText(3, 10, "-------------", "%c{red}-------------");
 }
 

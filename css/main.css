@@ -92,6 +92,8 @@ canvas {
     position: absolute;
     top: 0px;
     left: 0px;
+    width: calc(19 * 16px) !important;
+    height: calc(19 * 16px) !important;
 }
 
 header {
