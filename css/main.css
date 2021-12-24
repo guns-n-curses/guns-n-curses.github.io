@@ -70,6 +70,9 @@ body {
 
 #display {
     text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 #canvas-container {
@@ -77,6 +80,8 @@ body {
     height: calc(19 * 16px);
     display: inline-block;
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 canvas {
@@ -99,6 +104,7 @@ label {
     letter-spacing: 8px;
     overflow: hidden;
     padding: 0;
+    margin: 0;
     border: none;
     outline: none;
     white-space: pre;
