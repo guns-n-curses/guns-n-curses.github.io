@@ -76,6 +76,12 @@ body {
     width: calc(19 * 16px);
     height: calc(19 * 16px);
     display: inline-block;
+    position: relative;
+}
+
+canvas {
+    image-rendering: crisp-edges;
+    filter: blur(1px);
 }
 
 header {
@@ -86,14 +92,19 @@ label {
     display: inline-block;
 }
 
-input[type=radio] {
-    display: none;
-}
-
-input[type="radio"] + label:before {
-    content: "( ) ";
-}
-
-input[type="radio"]:checked + label:before {
-    content: "(X) ";
+#crispy {
+    z-index: 10;
+    width: calc(19 * 16px);
+    height: calc(19 * 16px);
+    letter-spacing: 8px;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    outline: none;
+    white-space: pre;
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    background: transparent;
+    line-height: 16px;
 }
