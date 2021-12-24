@@ -88,7 +88,7 @@ body {
 
 canvas {
     image-rendering: crisp-edges;
-    filter: blur(1px);
+    filter: blur(0.5px);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -118,4 +118,5 @@ label {
     left: 4px;
     background: transparent;
     line-height: 16px;
+    color: white;
 }

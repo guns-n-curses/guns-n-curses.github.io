@@ -71,7 +71,7 @@ ui.myDrawText = function(x, y, crispyText, blurryText = '') {
     ui.displayLines[y] = ui.displayLines[y].substr(0, x) +
         crispyText +
         ui.displayLines[y].substr(x + crispyText.length);
-    ui.myDisplay.value = ui.displayLines.join('\n');
+    ui.myDisplay.innerHTML = ui.displayLines.join('\n');
     
     ui.display.drawText(x, y, blurryText);
 }
@@ -81,9 +81,9 @@ ui.myDrawText = function(x, y, crispyText, blurryText = '') {
 ui.myDraw = function(x, y, crispyChar, blurryChar = "\u00A0", fg, bg) {
 
     let p = y * 19 + x;
-    let current = ui.myDisplay.value;
+    let current = ui.myDisplay.innerHTML;
     current = current.substr(0, p) + crispyChar + current.substr(p + 1);
-    ui.myDisplay.value = current;
+    ui.myDisplay.innerHTML = current;
     
     ui.display.draw(x, y, blurryChar, fg, bg);
 }
@@ -103,11 +103,11 @@ ui.splashScreen = function () {
             x, y,
             '~', ROT.Color.toHex(ROT.Color.interpolate([255, 0, 0], [127, 127, 0], c)), "#00000010"
         );*/
-        ui.myDraw(x, y, ' ', '~', ROT.Color.toHex(ROT.Color.interpolate([255, 0, 0], [127+64, 127+64, 0], c)), "#00000010");
+        ui.myDraw(x, y, ' ', '~', ROT.Color.toHex(ROT.Color.interpolate([255, 0, 0], [255, 255, 0], c)), "#00000010");
     }
-    ui.myDrawText(3, 8,  "-------------", "%c{#red}-------------");
-    ui.myDrawText(3, 9,  "GUNS И CURSES", "%c{#red}GUNS И CURSES");
-    ui.myDrawText(3, 10, "-------------", "%c{#red}-------------");
+    ui.myDrawText(3, 8,  "-------------", "%c{red}-------------");
+    ui.myDrawText(3, 9,  "GUNS И CURSES", "%c{red}GUNS И CURSES");
+    ui.myDrawText(3, 10, "-------------", "%c{red}-------------");
 }
 
 setInterval(ui.splashScreen, 100);
